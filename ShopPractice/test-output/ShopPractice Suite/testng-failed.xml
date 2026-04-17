@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ShopPractice Suite]">
+  <listeners>
+    <listener class-name="com.shoppractice.listeners.ExtentTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="ShopPractice Tests(failed)">
+    <classes>
+      <class name="com.shoppractice.test.CartTest">
+        <methods>
+          <include name="cartTest"/>
+          <include name="checkoutTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="removeItemTest"/>
+        </methods>
+      </class> <!-- com.shoppractice.test.CartTest -->
+      <class name="com.shoppractice.test.OrderTest">
+        <methods>
+          <include name="verifyOrderHistory"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.shoppractice.test.OrderTest -->
+      <class name="com.shoppractice.test.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="logoutTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.shoppractice.test.LoginTest -->
+      <class name="com.shoppractice.test.ProductTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="multipleProductTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="productListingTest"/>
+        </methods>
+      </class> <!-- com.shoppractice.test.ProductTest -->
+    </classes>
+  </test> <!-- ShopPractice Tests(failed) -->
+</suite> <!-- Failed suite [ShopPractice Suite] -->
